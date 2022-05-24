@@ -1,4 +1,4 @@
-class Pos {
+export default class Pos {
     constructor() {
         this.$('#save-data').addEventListener('click',this.saveData);        
         this.getData(Pos.currentPage);
