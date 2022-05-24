@@ -3,6 +3,9 @@ export default class Pos {
         name:'zs',
         age:22,        
     }
+    status = {
+        info:'全力以赴,破釜沉舟'
+    }
     constructor() {
         this.$('#save-data').addEventListener('click',this.saveData);        
         this.getData(Pos.currentPage);
