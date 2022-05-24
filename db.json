@@ -1,0 +1,58 @@
+{
+  "problem": [
+    {
+      "title": "2",
+      "pos": "3",
+      "idea": "4",
+      "id": 8
+    },
+    {
+      "title": "恶心的舍友",
+      "pos": "15#405",
+      "idea": "把那群贱人全部剁成肉酱",
+      "id": 9
+    },
+    {
+      "title": "5",
+      "pos": "6",
+      "idea": "6",
+      "id": 10
+    },
+    {
+      "title": "arr",
+      "pos": "push",
+      "idea": "在数组末尾添加元素",
+      "id": 11
+    },
+    {
+      "title": "arr",
+      "pos": "arr.contact",
+      "idea": "连接两个数组",
+      "id": 12
+    },
+    {
+      "title": "7",
+      "pos": "8",
+      "idea": "9",
+      "id": 13
+    },
+    {
+      "title": "arr",
+      "pos": "arr.pop",
+      "idea": "从数组末尾删除一个元素",
+      "id": 14
+    },
+    {
+      "title": "arr",
+      "pos": "arr.unshift",
+      "idea": "向数组前面添加一个元素",
+      "id": 15
+    },
+    {
+      "title": "6",
+      "pos": "7",
+      "idea": "8",
+      "id": 16
+    }
+  ]
+}

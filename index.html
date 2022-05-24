@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <style>
+        .head{
+            width: 600px;
+            height: 180px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+        .head img{
+            width: 45%;
+            height: 70%;
+            margin-right: 30px;
+        }
+        .row button{
+            width: 100px;
+        }
+        
+        #ulPage{
+          /* display: inline-block; */
+          position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="head">
+            <img src="1.jpg">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">添加</button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h4 class="modal-title" id="exampleModalLabel">标题</h4>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="form-group">
+                          <label for="title" class="control-label">标题:</label>
+                          <input type="text" class="form-control" id="title">
+                        </div>
+                        <div class="form-group">
+                            <label for="pos" class="control-label">位置:</label>
+                            <textarea class="form-control" id="pos"></textarea>
+                        </div>
+                        <div class="form-group">
+                          <label for="idea" class="control-label">想法:</label>
+                          <textarea class="form-control" id="idea"></textarea>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                      <button type="button" class="btn btn-primary btn-save" id="save-data">保存</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 确定删除的模态框 -->
+              <div class="modal fade" tabindex="-1" role="dialog" id="delModal">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h4 class="modal-title">确定删除吗</h4>
+                    </div>
+                    <div class="modal-body">
+                      <p>确定删除当前数据吗？&hellip;</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                      <button type="button" class="btn btn-primary btn-confrim">删除</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 确定修改的模态框 -->
+              <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h4 class="modal-title" id="editModalLabel">标题</h4>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="form-group">
+                          <label for="title" class="control-label">标题:</label>
+                          <input type="text" class="form-control" id="title">
+                        </div>
+                        <div class="form-group">
+                            <label for="pos" class="control-label">位置:</label>
+                            <textarea class="form-control" id="pos"></textarea>
+                        </div>
+                        <div class="form-group">
+                          <label for="idea" class="control-label">想法:</label>
+                          <textarea class="form-control" id="idea"></textarea>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                      <button type="button" class="btn btn-primary btn-save" id="edit-data">保存</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <table class="table">
+           <thead>
+               <th>#</th>
+               <th>名字</th>
+               <th>位置</th>
+               <th>想法</th>
+               <th>操作</th>
+           </thead> 
+           <tbody>
+
+           </tbody>
+        </table>
+        <nav aria-label="Page navigation">
+            <ul class="pagination" id="ulPage">
+             <!--  <li>
+                <a href="#" aria-label="Previous" >
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li>
+                <a href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li> -->
+            </ul>
+          </nav>
+    </div>
+    <script src="jquery/dist/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- <script src="index.js"></script> -->
+    <script src="index1.js"></script>
+</body>
+
+</html>
