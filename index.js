@@ -1,4 +1,8 @@
 export default class Pos {
+    Props={
+        name:'zs',
+        age:22,        
+    }
     constructor() {
         this.$('#save-data').addEventListener('click',this.saveData);        
         this.getData(Pos.currentPage);
